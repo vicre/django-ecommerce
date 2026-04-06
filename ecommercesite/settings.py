@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'products',
+    'cart',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +125,11 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Directories where Django looks for additional static files (e.g. compiled Tailwind output)
 STATICFILES_DIRS = [
-    f"{BASE_DIR}/static/dist/styles.css"
+    BASE_DIR / "static"
 ]
+
+MEDIA_URL = 'media/'
+STATIC_ROOT = BASE_DIR/'staticfiles'
+MEDIA_ROOT = BASE_DIR/'mediafiles'
