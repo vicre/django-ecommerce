@@ -1,7 +1,5 @@
 venv/
 node_modules/
-static/
-package-lock.json
 tailwind.config.js.bak
 *.pyc
 db.sqlite3
